@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>La Fiaccola Periodico</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header clearfix">
+      <a href=""class="header__logo">Logo</a>
+      <a href=""class="header__icon-bar">
+        <span></span>
+        <span></span>
+        <span></span>
+        </a>
+      <ul class="header__menu animate">
+        <li class="header__menu__item"><a href="#">Facebook</a></li>
+        <li class="header__menu__item"><a href="#">Instagram</a></li>
+        <li class="header__menu__item"><a href="#">Twitter</a></li>
+        <li class="header__menu__item"><a href="#">Youtube</a></li>
+      </ul>
+    </header>
+
+    <section class="cover">
+      <div class="cover__filter">
+
+      </div>
+      <div class="cover__caption">
+        <div class="cover__caption__copy">
+          <h1><strong><font face="Cooper Black" color= "#e61e00")>La Fiaccola Periodico</font></strong></h1>
+          <h2><strong>Direttore: Paolo Scagliarini</strong></h2>
+          <a href="" class="button">Call to Action</a>
+        </div>
+      </div>
+    </section>
+
+  <header class="navbar clearfix">
+
+
+    <div class="navbar">
+    <ul class="navbar__menu">
+      <li class="navbar__menu__item"><a href="#home" class="active">Home</a></li>
+      <li class="navbar__menu__item"><a href="#Page">Page</a></li>
+      <li class="navbar__menu__item"><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<footer class="footer">
+	<p>Copyright - 2020 La Fiaccola Periodico</p>
+</footer>
+
+<script>
+	 $(document).ready(function(){
+
+			$(".header__icon-bar").click(function(e){
+
+				$(".header__menu").toggleClass('is-open');
+				e.preventDefault();
+
+			});
+	 });
+</script>
+
+
+
+</body>
+</html>
